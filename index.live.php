@@ -21,7 +21,7 @@ echo $cpanelHeader;
 
   /* End of vertical-menubar */
 </style>
-<div id="root" class="cloudflare-partners site-wrapper">
+<div id="root" class=" site-wrapper">
 
   ApiKey: <input id="apikey" type="username" size="60" /><br /><br/>
   <button type="button" id="domainListBtn" class="btnstyle">Select Domain</button>
