@@ -1,0 +1,11 @@
+[
+    {
+        "icon" : "arvanlogo.svg",
+        "name" : "Arvancloud",
+        "group_id" : "software",
+        "order" : 1,
+        "type" : "link",
+        "id" : "arvancloud",
+        "uri" : "arvancloud/index.live.php"
+    }
+]
