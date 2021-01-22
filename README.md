@@ -30,5 +30,5 @@ Step 2. clone this repository in your host necessary files and run installation 
 
 ## Localization
 
-Now Only support English. In the future we plan to support more languages by default by means of `config/en.js`.
+Now Only support English. In the future There is a plan to support more languages by default.
 
