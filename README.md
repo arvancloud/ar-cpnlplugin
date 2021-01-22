@@ -23,9 +23,9 @@ Step 1. Access cPanel for the server using root user by:
 
 `ssh root@SERVER IP ADDRESS or SERVER NAME`
 
-Step 2. clone thi repository in your host necessary files and run installation
+Step 2. clone this repository in your host necessary files and run installation in the directory
 
-`bash <(curl -s https://raw.githubusercontent.com/cloudflare/CloudFlare-CPanel/master/cloudflare.install.sh) -k [YOUR_HOST_API_KEY] -n '[YOUR_COMPANY_NAME]' `
+` ./arvancloud.install.sh`
 
 
 ## Localization
