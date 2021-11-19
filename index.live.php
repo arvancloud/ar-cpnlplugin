@@ -1,15 +1,14 @@
 <?php
 require_once '/usr/local/cpanel/php/cpanel.php';
 $cpanel = new CPANEL();
-
-$stylesheetsAndMetaTags = '
-    <meta http-equiv="cache-control" content="max-age=0" />
-    <meta http-equiv="cache-control" content="no-cache" />
-    <meta http-equiv="expires" content="0" />
-    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
-    <meta http-equiv="pragma" content="no-cache" />
-    <link rel="stylesheet" href="./stylesheets/arc.core.css" media="screen,projection" charset="utf-8"/>
-    ';
+$stylesheetsAndMetaTags = <<<META
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+<link rel="stylesheet" href="./stylesheets/arc.core.css" media="screen,projection" charset="utf-8"/>
+META;
 //add our custom styles before the </head> ¯\_(ツ)_/¯
 $cpanelHeader = str_replace('</head>', $stylesheetsAndMetaTags . '</head>', $cpanel->header('ArvanCloud'));
 echo $cpanelHeader;
